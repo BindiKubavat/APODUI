@@ -9,12 +9,22 @@
 /* Begin PBXBuildFile section */
 		07365ACB28D6416F00EB6F2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07365ACA28D6416F00EB6F2C /* AppDelegate.swift */; };
 		07365ACD28D6416F00EB6F2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07365ACC28D6416F00EB6F2C /* SceneDelegate.swift */; };
-		07365ACF28D6416F00EB6F2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07365ACE28D6416F00EB6F2C /* ViewController.swift */; };
 		07365AD228D6416F00EB6F2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07365AD028D6416F00EB6F2C /* Main.storyboard */; };
 		07365AD528D6416F00EB6F2C /* APODUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07365AD328D6416F00EB6F2C /* APODUI.xcdatamodeld */; };
 		07365AD728D6417000EB6F2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07365AD628D6417000EB6F2C /* Assets.xcassets */; };
 		07365ADA28D6417000EB6F2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07365AD828D6417000EB6F2C /* LaunchScreen.storyboard */; };
 		07365AE528D6417000EB6F2C /* APODUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07365AE428D6417000EB6F2C /* APODUITests.swift */; };
+		07365B0028D643B100EB6F2C /* APODKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07365AFF28D643B100EB6F2C /* APODKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		078DC68828D8283D00ADD88E /* APODKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07365B0928D6443C00EB6F2C /* APODKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		07A9118928D72E2600492652 /* APODVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9118828D72E2600492652 /* APODVC.swift */; };
+		07A9118C28D72E4300492652 /* APODViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9118B28D72E4300492652 /* APODViewModel.swift */; };
+		07A9119028D7417900492652 /* APODDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9118F28D7417900492652 /* APODDateVC.swift */; };
+		07A9119328D742D200492652 /* RoundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9119228D742D200492652 /* RoundImage.swift */; };
+		07A9119728D748CC00492652 /* APODVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9119628D748CC00492652 /* APODVCModel.swift */; };
+		07A9119928D74BD600492652 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9119828D74BD600492652 /* Constraints.swift */; };
+		07A911A328D8122F00492652 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A911A228D8122F00492652 /* UserDefaults.swift */; };
+		07A911A728D8167E00492652 /* RecentlyVisitedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A911A628D8167E00492652 /* RecentlyVisitedVC.swift */; };
+		07A911AA28D8176E00492652 /* RecentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A911A928D8176E00492652 /* RecentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,13 +35,40 @@
 			remoteGlobalIDString = 07365AC628D6416F00EB6F2C;
 			remoteInfo = APODUI;
 		};
+		07365B0828D6443C00EB6F2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07365B0328D6443C00EB6F2C /* APODKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 07365AA128D6410D00EB6F2C;
+			remoteInfo = APODKit;
+		};
+		07365B0A28D6443C00EB6F2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07365B0328D6443C00EB6F2C /* APODKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 07365AAA28D6410E00EB6F2C;
+			remoteInfo = APODKitTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		07365B0228D643B100EB6F2C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				078DC68828D8283D00ADD88E /* APODKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		07365AC728D6416F00EB6F2C /* APODUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APODUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07365ACA28D6416F00EB6F2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07365ACC28D6416F00EB6F2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		07365ACE28D6416F00EB6F2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07365AD128D6416F00EB6F2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07365AD428D6416F00EB6F2C /* APODUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = APODUI.xcdatamodel; sourceTree = "<group>"; };
 		07365AD628D6417000EB6F2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +77,18 @@
 		07365AE028D6417000EB6F2C /* APODUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APODUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07365AE428D6417000EB6F2C /* APODUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODUITests.swift; sourceTree = "<group>"; };
 		07365AE628D6417000EB6F2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07365AFF28D643B100EB6F2C /* APODKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APODKit.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/APODKit-eospyzcwquqwcdcdlbwbapmkyprr/Build/Products/Debug-iphonesimulator/APODKit.framework"; sourceTree = "<group>"; };
+		07365B0328D6443C00EB6F2C /* APODKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = APODKit.xcodeproj; path = ../APODKit/APODKit.xcodeproj; sourceTree = "<group>"; };
+		07A9118828D72E2600492652 /* APODVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODVC.swift; sourceTree = "<group>"; };
+		07A9118B28D72E4300492652 /* APODViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewModel.swift; sourceTree = "<group>"; };
+		07A9118F28D7417900492652 /* APODDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODDateVC.swift; sourceTree = "<group>"; };
+		07A9119228D742D200492652 /* RoundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImage.swift; sourceTree = "<group>"; };
+		07A9119628D748CC00492652 /* APODVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODVCModel.swift; sourceTree = "<group>"; };
+		07A9119828D74BD600492652 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		07A9119D28D7784600492652 /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07A911A228D8122F00492652 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		07A911A628D8167E00492652 /* RecentlyVisitedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyVisitedVC.swift; sourceTree = "<group>"; };
+		07A911A928D8176E00492652 /* RecentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07365B0028D643B100EB6F2C /* APODKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +113,11 @@
 		07365ABE28D6416F00EB6F2C = {
 			isa = PBXGroup;
 			children = (
+				07365B0328D6443C00EB6F2C /* APODKit.xcodeproj */,
 				07365AC928D6416F00EB6F2C /* APODUI */,
 				07365AE328D6417000EB6F2C /* APODUITests */,
 				07365AC828D6416F00EB6F2C /* Products */,
+				07365AF828D6419400EB6F2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,9 +133,11 @@
 		07365AC928D6416F00EB6F2C /* APODUI */ = {
 			isa = PBXGroup;
 			children = (
+				07A911A428D8164600492652 /* RecentlyVisited */,
+				07A9119128D742B900492652 /* Custom */,
+				07A9118628D72E0E00492652 /* APOD */,
 				07365ACA28D6416F00EB6F2C /* AppDelegate.swift */,
 				07365ACC28D6416F00EB6F2C /* SceneDelegate.swift */,
-				07365ACE28D6416F00EB6F2C /* ViewController.swift */,
 				07365AD028D6416F00EB6F2C /* Main.storyboard */,
 				07365AD628D6417000EB6F2C /* Assets.xcassets */,
 				07365AD828D6417000EB6F2C /* LaunchScreen.storyboard */,
@@ -102,6 +156,94 @@
 			path = APODUITests;
 			sourceTree = "<group>";
 		};
+		07365AF828D6419400EB6F2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07A9119D28D7784600492652 /* NetworkKit.framework */,
+				07365AFF28D643B100EB6F2C /* APODKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07365B0428D6443C00EB6F2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07365B0928D6443C00EB6F2C /* APODKit.framework */,
+				07365B0B28D6443C00EB6F2C /* APODKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07A9118628D72E0E00492652 /* APOD */ = {
+			isa = PBXGroup;
+			children = (
+				07A9119528D748B900492652 /* Model */,
+				07A9118A28D72E2E00492652 /* ViewModel */,
+				07A9118728D72E1500492652 /* ViewController */,
+			);
+			path = APOD;
+			sourceTree = "<group>";
+		};
+		07A9118728D72E1500492652 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				07A9118828D72E2600492652 /* APODVC.swift */,
+				07A9118F28D7417900492652 /* APODDateVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		07A9118A28D72E2E00492652 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				07A9118B28D72E4300492652 /* APODViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		07A9119128D742B900492652 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				07A9119228D742D200492652 /* RoundImage.swift */,
+				07A9119828D74BD600492652 /* Constraints.swift */,
+				07A911A228D8122F00492652 /* UserDefaults.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		07A9119528D748B900492652 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07A9119628D748CC00492652 /* APODVCModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		07A911A428D8164600492652 /* RecentlyVisited */ = {
+			isa = PBXGroup;
+			children = (
+				07A911A828D8175800492652 /* View */,
+				07A911A528D8166500492652 /* ViewController */,
+			);
+			path = RecentlyVisited;
+			sourceTree = "<group>";
+		};
+		07A911A528D8166500492652 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				07A911A628D8167E00492652 /* RecentlyVisitedVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		07A911A828D8175800492652 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07A911A928D8176E00492652 /* RecentCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +254,7 @@
 				07365AC328D6416F00EB6F2C /* Sources */,
 				07365AC428D6416F00EB6F2C /* Frameworks */,
 				07365AC528D6416F00EB6F2C /* Resources */,
+				07365B0228D643B100EB6F2C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +313,12 @@
 			mainGroup = 07365ABE28D6416F00EB6F2C;
 			productRefGroup = 07365AC828D6416F00EB6F2C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 07365B0428D6443C00EB6F2C /* Products */;
+					ProjectRef = 07365B0328D6443C00EB6F2C /* APODKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				07365AC628D6416F00EB6F2C /* APODUI */,
@@ -177,6 +326,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		07365B0928D6443C00EB6F2C /* APODKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = APODKit.framework;
+			remoteRef = 07365B0828D6443C00EB6F2C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07365B0B28D6443C00EB6F2C /* APODKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = APODKitTests.xctest;
+			remoteRef = 07365B0A28D6443C00EB6F2C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		07365AC528D6416F00EB6F2C /* Resources */ = {
@@ -203,9 +369,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07365ACF28D6416F00EB6F2C /* ViewController.swift in Sources */,
 				07365AD528D6416F00EB6F2C /* APODUI.xcdatamodeld in Sources */,
+				07A9119728D748CC00492652 /* APODVCModel.swift in Sources */,
+				07A9119328D742D200492652 /* RoundImage.swift in Sources */,
+				07A9119928D74BD600492652 /* Constraints.swift in Sources */,
+				07A9118928D72E2600492652 /* APODVC.swift in Sources */,
+				07A9119028D7417900492652 /* APODDateVC.swift in Sources */,
 				07365ACB28D6416F00EB6F2C /* AppDelegate.swift in Sources */,
+				07A9118C28D72E4300492652 /* APODViewModel.swift in Sources */,
+				07A911AA28D8176E00492652 /* RecentCell.swift in Sources */,
+				07A911A328D8122F00492652 /* UserDefaults.swift in Sources */,
+				07A911A728D8167E00492652 /* RecentlyVisitedVC.swift in Sources */,
 				07365ACD28D6416F00EB6F2C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +541,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = APODUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -384,6 +559,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = APODUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
