@@ -15,7 +15,8 @@
 		07365ADA28D6417000EB6F2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07365AD828D6417000EB6F2C /* LaunchScreen.storyboard */; };
 		07365AE528D6417000EB6F2C /* APODUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07365AE428D6417000EB6F2C /* APODUITests.swift */; };
 		07365B0028D643B100EB6F2C /* APODKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07365AFF28D643B100EB6F2C /* APODKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		078DC68828D8283D00ADD88E /* APODKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07365B0928D6443C00EB6F2C /* APODKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		078DC6A528D84B1800ADD88E /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078DC6A428D84B1800ADD88E /* NetworkKit.framework */; };
+		078DC6A628D84B1800ADD88E /* NetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 078DC6A428D84B1800ADD88E /* NetworkKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		07A9118928D72E2600492652 /* APODVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9118828D72E2600492652 /* APODVC.swift */; };
 		07A9118C28D72E4300492652 /* APODViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9118B28D72E4300492652 /* APODViewModel.swift */; };
 		07A9119028D7417900492652 /* APODDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9118F28D7417900492652 /* APODDateVC.swift */; };
@@ -35,16 +36,16 @@
 			remoteGlobalIDString = 07365AC628D6416F00EB6F2C;
 			remoteInfo = APODUI;
 		};
-		07365B0828D6443C00EB6F2C /* PBXContainerItemProxy */ = {
+		078DC69228D84A1100ADD88E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 07365B0328D6443C00EB6F2C /* APODKit.xcodeproj */;
+			containerPortal = 078DC68C28D84A1100ADD88E /* APODKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 07365AA128D6410D00EB6F2C;
 			remoteInfo = APODKit;
 		};
-		07365B0A28D6443C00EB6F2C /* PBXContainerItemProxy */ = {
+		078DC69428D84A1100ADD88E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 07365B0328D6443C00EB6F2C /* APODKit.xcodeproj */;
+			containerPortal = 078DC68C28D84A1100ADD88E /* APODKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 07365AAA28D6410E00EB6F2C;
 			remoteInfo = APODKitTests;
@@ -58,7 +59,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				078DC68828D8283D00ADD88E /* APODKit.framework in Embed Frameworks */,
+				078DC6A628D84B1800ADD88E /* NetworkKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,14 +79,14 @@
 		07365AE428D6417000EB6F2C /* APODUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODUITests.swift; sourceTree = "<group>"; };
 		07365AE628D6417000EB6F2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07365AFF28D643B100EB6F2C /* APODKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APODKit.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/APODKit-eospyzcwquqwcdcdlbwbapmkyprr/Build/Products/Debug-iphonesimulator/APODKit.framework"; sourceTree = "<group>"; };
-		07365B0328D6443C00EB6F2C /* APODKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = APODKit.xcodeproj; path = ../APODKit/APODKit.xcodeproj; sourceTree = "<group>"; };
+		078DC68C28D84A1100ADD88E /* APODKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = APODKit.xcodeproj; path = Dependencies/APODKit/APODKit.xcodeproj; sourceTree = "<group>"; };
+		078DC6A428D84B1800ADD88E /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A9118828D72E2600492652 /* APODVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODVC.swift; sourceTree = "<group>"; };
 		07A9118B28D72E4300492652 /* APODViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewModel.swift; sourceTree = "<group>"; };
 		07A9118F28D7417900492652 /* APODDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODDateVC.swift; sourceTree = "<group>"; };
 		07A9119228D742D200492652 /* RoundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImage.swift; sourceTree = "<group>"; };
 		07A9119628D748CC00492652 /* APODVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODVCModel.swift; sourceTree = "<group>"; };
 		07A9119828D74BD600492652 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
-		07A9119D28D7784600492652 /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A911A228D8122F00492652 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		07A911A628D8167E00492652 /* RecentlyVisitedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyVisitedVC.swift; sourceTree = "<group>"; };
 		07A911A928D8176E00492652 /* RecentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCell.swift; sourceTree = "<group>"; };
@@ -96,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078DC6A528D84B1800ADD88E /* NetworkKit.framework in Frameworks */,
 				07365B0028D643B100EB6F2C /* APODKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,7 +115,7 @@
 		07365ABE28D6416F00EB6F2C = {
 			isa = PBXGroup;
 			children = (
-				07365B0328D6443C00EB6F2C /* APODKit.xcodeproj */,
+				078DC68C28D84A1100ADD88E /* APODKit.xcodeproj */,
 				07365AC928D6416F00EB6F2C /* APODUI */,
 				07365AE328D6417000EB6F2C /* APODUITests */,
 				07365AC828D6416F00EB6F2C /* Products */,
@@ -159,17 +161,17 @@
 		07365AF828D6419400EB6F2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				07A9119D28D7784600492652 /* NetworkKit.framework */,
+				078DC6A428D84B1800ADD88E /* NetworkKit.framework */,
 				07365AFF28D643B100EB6F2C /* APODKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		07365B0428D6443C00EB6F2C /* Products */ = {
+		078DC68D28D84A1100ADD88E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07365B0928D6443C00EB6F2C /* APODKit.framework */,
-				07365B0B28D6443C00EB6F2C /* APODKitTests.xctest */,
+				078DC69328D84A1100ADD88E /* APODKit.framework */,
+				078DC69528D84A1100ADD88E /* APODKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -315,8 +317,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 07365B0428D6443C00EB6F2C /* Products */;
-					ProjectRef = 07365B0328D6443C00EB6F2C /* APODKit.xcodeproj */;
+					ProductGroup = 078DC68D28D84A1100ADD88E /* Products */;
+					ProjectRef = 078DC68C28D84A1100ADD88E /* APODKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -328,18 +330,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		07365B0928D6443C00EB6F2C /* APODKit.framework */ = {
+		078DC69328D84A1100ADD88E /* APODKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = APODKit.framework;
-			remoteRef = 07365B0828D6443C00EB6F2C /* PBXContainerItemProxy */;
+			remoteRef = 078DC69228D84A1100ADD88E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		07365B0B28D6443C00EB6F2C /* APODKitTests.xctest */ = {
+		078DC69528D84A1100ADD88E /* APODKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = APODKitTests.xctest;
-			remoteRef = 07365B0A28D6443C00EB6F2C /* PBXContainerItemProxy */;
+			remoteRef = 078DC69428D84A1100ADD88E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

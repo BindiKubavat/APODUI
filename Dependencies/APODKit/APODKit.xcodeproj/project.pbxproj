@@ -18,8 +18,8 @@
 		07365B1328D6474E00EB6F2C /* PathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07365B1128D6474E00EB6F2C /* PathGenerator.swift */; };
 		07365B1528D6485000EB6F2C /* APODManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07365B1428D6485000EB6F2C /* APODManager.swift */; };
 		07365B1628D6485000EB6F2C /* APODManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07365B1428D6485000EB6F2C /* APODManager.swift */; };
-		07A9116F28D6BCD600492652 /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A9116C28D6BCC800492652 /* NetworkKit.framework */; };
-		07A9117028D6BCD600492652 /* NetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07A9116C28D6BCC800492652 /* NetworkKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		078DC69F28D84A4B00ADD88E /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078DC69C28D84A3F00ADD88E /* NetworkKit.framework */; };
+		078DC6A028D84A4B00ADD88E /* NetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 078DC69C28D84A3F00ADD88E /* NetworkKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		07A9117428D6BE0B00492652 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9117328D6BE0B00492652 /* URLExtension.swift */; };
 		07A9117628D6BF2100492652 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9117528D6BF2100492652 /* Date.swift */; };
 		07A9119C28D7571500492652 /* APODModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9119B28D7571500492652 /* APODModel.swift */; };
@@ -33,16 +33,16 @@
 			remoteGlobalIDString = 07365AA028D6410D00EB6F2C;
 			remoteInfo = APODKit;
 		};
-		07A9116B28D6BCC800492652 /* PBXContainerItemProxy */ = {
+		078DC69B28D84A3F00ADD88E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 07A9116628D6BCC800492652 /* NetworkKit.xcodeproj */;
+			containerPortal = 078DC69628D84A3E00ADD88E /* NetworkKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 07365B4428D64A5600EB6F2C;
 			remoteInfo = NetworkKit;
 		};
-		07A9116D28D6BCC800492652 /* PBXContainerItemProxy */ = {
+		078DC69D28D84A3F00ADD88E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 07A9116628D6BCC800492652 /* NetworkKit.xcodeproj */;
+			containerPortal = 078DC69628D84A3E00ADD88E /* NetworkKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 07365B4D28D64A5700EB6F2C;
 			remoteInfo = NetworkKitTests;
@@ -56,7 +56,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				07A9117028D6BCD600492652 /* NetworkKit.framework in Embed Frameworks */,
+				078DC6A028D84A4B00ADD88E /* NetworkKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,7 +74,7 @@
 		07365B0D28D644D800EB6F2C /* QueryParam .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QueryParam .swift"; sourceTree = "<group>"; };
 		07365B1128D6474E00EB6F2C /* PathGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathGenerator.swift; sourceTree = "<group>"; };
 		07365B1428D6485000EB6F2C /* APODManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODManager.swift; sourceTree = "<group>"; };
-		07A9116628D6BCC800492652 /* NetworkKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkKit.xcodeproj; path = ../NetworkKit/NetworkKit.xcodeproj; sourceTree = "<group>"; };
+		078DC69628D84A3E00ADD88E /* NetworkKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkKit.xcodeproj; path = ../NetworkKit/NetworkKit.xcodeproj; sourceTree = "<group>"; };
 		07A9117328D6BE0B00492652 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 		07A9117528D6BF2100492652 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		07A9119B28D7571500492652 /* APODModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODModel.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07A9116F28D6BCD600492652 /* NetworkKit.framework in Frameworks */,
+				078DC69F28D84A4B00ADD88E /* NetworkKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +103,7 @@
 		07365A9728D6410D00EB6F2C = {
 			isa = PBXGroup;
 			children = (
-				07A9116628D6BCC800492652 /* NetworkKit.xcodeproj */,
+				078DC69628D84A3E00ADD88E /* NetworkKit.xcodeproj */,
 				07365AA328D6410D00EB6F2C /* APODKit */,
 				07365AAE28D6410E00EB6F2C /* APODKitTests */,
 				07365AA228D6410D00EB6F2C /* Products */,
@@ -167,11 +167,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		07A9116728D6BCC800492652 /* Products */ = {
+		078DC69728D84A3E00ADD88E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07A9116C28D6BCC800492652 /* NetworkKit.framework */,
-				07A9116E28D6BCC800492652 /* NetworkKitTests.xctest */,
+				078DC69C28D84A3F00ADD88E /* NetworkKit.framework */,
+				078DC69E28D84A3F00ADD88E /* NetworkKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -276,8 +276,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 07A9116728D6BCC800492652 /* Products */;
-					ProjectRef = 07A9116628D6BCC800492652 /* NetworkKit.xcodeproj */;
+					ProductGroup = 078DC69728D84A3E00ADD88E /* Products */;
+					ProjectRef = 078DC69628D84A3E00ADD88E /* NetworkKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -289,18 +289,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		07A9116C28D6BCC800492652 /* NetworkKit.framework */ = {
+		078DC69C28D84A3F00ADD88E /* NetworkKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = NetworkKit.framework;
-			remoteRef = 07A9116B28D6BCC800492652 /* PBXContainerItemProxy */;
+			remoteRef = 078DC69B28D84A3F00ADD88E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		07A9116E28D6BCC800492652 /* NetworkKitTests.xctest */ = {
+		078DC69E28D84A3F00ADD88E /* NetworkKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = NetworkKitTests.xctest;
-			remoteRef = 07A9116D28D6BCC800492652 /* PBXContainerItemProxy */;
+			remoteRef = 078DC69D28D84A3F00ADD88E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
