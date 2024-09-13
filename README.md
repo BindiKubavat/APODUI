@@ -1,5 +1,5 @@
 # APODUI
-Integrated Nasa's APOD Apis
+Integrated Nasa's Astronomy Picture of the Day - APOD Apis
 
 To load and Display the APOD below are 2 iOS Frameworks I have created: 
 
